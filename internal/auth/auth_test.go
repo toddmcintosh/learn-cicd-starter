@@ -6,7 +6,7 @@ import (
 )
 
 func TestGetAPIKey_NoHeader(t *testing.T) {
-	//h := http.Header{}
+	h := http.Header{}
 	_, err := GetAPIKey(h)
 
 	if err != ErrNoAuthHeaderIncluded {
